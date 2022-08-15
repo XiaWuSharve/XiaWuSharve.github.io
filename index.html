@@ -1,12 +1,24 @@
+<!--
+ * @Author: XiaWuSharve sharve@foxmail.com
+ * @Date: 2022-08-15 09:55:52
+ * @LastEditors: XiaWuSharve sharve@foxmail.com
+ * @LastEditTime: 2022-08-15 10:15:02
+ * @FilePath: \XiaWuSharve.github.io\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Test</title>
-</head>
-<body>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script>
-        alert("此网页可以运行js代码！");
+      axios.get("https://70a0f9fb.r3.vip.cpolar.cn").then(function (response) {
+        // 处理成功情况
+        console.log(response);
+      });
     </script>
-</body>
+  </body>
 </html>
